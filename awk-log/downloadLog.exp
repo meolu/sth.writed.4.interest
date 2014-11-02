@@ -1,0 +1,35 @@
+#########################################################################
+# File Name: downloadLog.exp
+# Author: wushuiyong
+# mail: wushuiyong@huamanshu.com
+# Created Time: Thu 10 Apr 2014 07:15:00 PM
+#########################################################################
+#!/home/tools/bin/64/expect
+
+# 设置超时 !important
+set timeout 10000
+
+set user "wushuiyong"
+set passwd "password\n"
+
+set machine [lindex $argv 0]
+set logFile [lindex $argv 1]
+
+# 下载限速10M
+spawn scp -l 80000 $user@$machine:/online/log/path/$logFile ${machine}/.
+
+expect {
+
+    "yes/no" {
+        send "yes\n";exp_continue;
+    }
+
+    "password:" {
+        send $passwd;expect eof
+    }
+}
+
+
+
+
+
