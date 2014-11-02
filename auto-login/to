@@ -1,0 +1,33 @@
+#########################################################################
+# File Name: to
+# Author: wushuiyong
+# mail: wushuiyong@huamanshu.com
+# use:to dev 123654
+# 用途：自动登录百度机器
+#########################################################################
+#!/bin/bash
+
+
+conf_file="./login.conf"
+
+# param confID
+initConf() {
+    conf=$1
+    INFO=`cat $conf_file \
+        | grep -v ^$ \
+        | sed -n "s/\s\+//;/\[${conf}\]/,/^\[/p" \
+        | grep -v ^'\[' ` && eval "$INFO"
+}
+
+helpInfo() {
+    awk '/\[/ && !/\[END\]/ {gsub(/[\[\]]/, "", $0); print $0}' $conf_file
+}
+
+if test -z $1
+then
+    helpInfo
+else
+    initConf $1
+    expect ./to.exp $host $user $pass
+fi
+

@@ -1,0 +1,33 @@
+#########################################################################
+# File Name: to.exp
+# Author: wushuiyong
+# mail: wushuiyong@huamanshu.com
+# use:expect to.exp host user pass 123654
+# 用途：自动登录机器
+#########################################################################
+#!/bin/expect
+
+# 登录堡垒机
+spawn ssh wushuiyong@relay.great-compony.com
+
+set host  [lindex $argv 0]
+set user  [lindex $argv 1]
+set pass  [lindex $argv 2]
+set token [lindex $argv 3]
+
+
+expect {
+
+    "relay.great-compony.com" {
+        send "ssh $user@$host\r"
+        exp_continue
+    }
+
+    "$host's password" {
+        send "$pass\r"
+        #expect eof
+    }
+}
+
+interact
+
