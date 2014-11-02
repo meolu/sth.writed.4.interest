@@ -4,3 +4,4 @@
 - [日志分析脚本](https://github.com/meolu/sth.writed.4.interest/tree/master/awk-log) - 涉及批量机器下载如日志的文件做分析，如错误分析，数量统计时，awk跟expect强强组合
 - [朴素贝叶斯-拼写纠正](https://github.com/meolu/sth.writed.4.interest/tree/master/naive-bayesian) - PHP也是可以做一些分类算法的东西的，像拼写纠正这么小的事情，只是效果不是我们终极线上应用那么精准，需要更多的规则和尝试
 - [切换hosts](https://github.com/meolu/sth.writed.4.interest/tree/master/switch-hosts) -  这样小工具，ubuntu虽然没有win和mac下switch-hosts好用，还是自己写一个，更舒心，你说呢
+- [ip2city](https://github.com/meolu/sth.writed.4.interest/tree/master/ip2city) - 支持php扩展、php、python
