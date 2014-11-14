@@ -5,3 +5,4 @@
 - [朴素贝叶斯-拼写纠正](https://github.com/meolu/sth.writed.4.interest/tree/master/naive-bayesian) - PHP也是可以做一些分类算法的东西的，像拼写纠正这么小的事情，只是效果不是我们终极线上应用那么精准，需要更多的规则和尝试
 - [切换hosts](https://github.com/meolu/sth.writed.4.interest/tree/master/switch-hosts) -  这样小工具，ubuntu虽然没有win和mac下switch-hosts好用，还是自己写一个，更舒心，你说呢
 - [ip2city](https://github.com/meolu/sth.writed.4.interest/tree/master/ip2city) - 支持php扩展、php、python
+- [sync-from-svn](https://github.com/meolu/sth.writed.4.interest/tree/master/sync-from-svn) - 实现把svn分支代码同步至测试环境的一小工具，支持web页面更新，命令行更新
