@@ -43,9 +43,9 @@ function KMP($src, $find, $debug = false) {
            $j++;
            $i++;
        } else {
-       if ($j === 0 && $find[$j] != $src[$i]) {
-           $i++;
-       }
+           if ($j === 0 && $find[$j] != $src[$i]) {
+               $i++;
+           }
            $j = $K[$j-1 >= 0 ? $j -1 : 0];
        }
    }
