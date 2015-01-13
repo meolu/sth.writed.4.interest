@@ -32,7 +32,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
     <form action="/svn.php" enctype="multipart/form-data" method="POST">
     版本：<input type="text" name="svn" style="width:600px" value="">
     <br/><br/>目录：<input name="dir" style="width:300px"><br/><br/>
-    <textarea rows="10" cols="100" name="files"></textarea>
+    <textarea rows="10" cols="100" name="files"><?php echo $_POST['files'] ?></textarea>
     <br/><br/>
     <?php
         if ($result) {
