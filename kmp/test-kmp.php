@@ -1,4 +1,5 @@
 <?php
+//test for script
 include 'kmp.php';
 
 // 测试下是否可用
