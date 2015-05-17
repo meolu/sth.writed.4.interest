@@ -16,7 +16,11 @@ public function createMonthlySettlementReport() {
     $fileDir = CONFIG_DOWNLOAD_FILE_BASE_PATH . '/alliance/settlement/';
     
     //获取网盟有效网站主
+<<<<<<< HEAD
     $sql = 'SELECT `ID`, `qihu_publisherid` FROM `publisher` WHERE `source_platform` = 1';
+=======
+    $sql = 'SELECT distinct `ID`, `qihu_publisherid` FROM `publisher` WHERE `source_platform` = 1 AND `disabled` = 0';
+>>>>>>> origin/master
     $res = Yii::app() -> db -> createCommand($sql) -> queryAll();
     
     if ($res) {
