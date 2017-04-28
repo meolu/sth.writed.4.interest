@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>颜色</title>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .group-9 {
+      width: 165px;
+      height: 165px;
+      float: left;
+      margin-left: 50px;
+      margin-bottom: 25px;
+    }
+
+    .group-9 div {
+      width: 50px;
+      height: 50px;
+      border-radius: 4px;
+      float: left;
+      margin: 0 5px 5px 0;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    #tip {
+      background-color: #60be29;
+      color: #fff;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      display: none;
+    }
+
+    #container {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="tip"></div>
+  <div id="container">
+    <h1>单击色块复制颜色代码 || 在色块上 Ctrl + C</h1>
+    <div>
+      <div class="group-9">
+        <div data-clipboard-text="#e01515"></div>
+        <div data-clipboard-text="#ff6600"></div>
+        <div data-clipboard-text="#fac450"></div>
+        <div data-clipboard-text="#e4249b"></div>
+        <div data-clipboard-text="#cccccc"></div>
+        <div data-clipboard-text="#5fbc29"></div>
+        <div data-clipboard-text="#582daa"></div>
+        <div data-clipboard-text="#0097da"></div>
+        <div data-clipboard-text="#01b3ca"></div>
+      </div>
+
+      <div class="group-9">
+        <div data-clipboard-text="#ffffff"></div>
+        <div data-clipboard-text="#fcfcfc"></div>
+        <div data-clipboard-text="#ececec"></div>
+        <div data-clipboard-text="#989898"></div>
+        <div data-clipboard-text="#cccccc"></div>
+        <div data-clipboard-text="#d9d9d9"></div>
+        <div data-clipboard-text="#666666"></div>
+        <div data-clipboard-text="#323232"></div>
+        <div data-clipboard-text="#000000"></div>
+      </div>
+
+      <div class="group-9">
+        <div data-clipboard-text="#f9ccd6"></div>
+        <div data-clipboard-text="#ffa5b4"></div>
+        <div data-clipboard-text="#fa727d"></div>
+        <div data-clipboard-text="#bb0606"></div>
+        <div data-clipboard-text="#e01515"></div>
+        <div data-clipboard-text="#ff3858"></div>
+        <div data-clipboard-text="#881414"></div>
+        <div data-clipboard-text="#4e1212"></div>
+        <div data-clipboard-text="#260404"></div>
+      </div>
+
+      <div class="group-9">
+        <div data-clipboard-text="#e2f582"></div>
+        <div data-clipboard-text="#d0ee9c"></div>
+        <div data-clipboard-text="#a6e33c"></div>
+        <div data-clipboard-text="#39a30e"></div>
+        <div data-clipboard-text="#60be29"></div>
+        <div data-clipboard-text="#70d445"></div>
+        <div data-clipboard-text="#18791b"></div>
+        <div data-clipboard-text="#1f4a12"></div>
+        <div data-clipboard-text="#102803"></div>
+      </div>
+
+      <div class="group-9">
+        <div data-clipboard-text="#cce4f6"></div>
+        <div data-clipboard-text="#95ccf5"></div>
+        <div data-clipboard-text="#6ac2f5"></div>
+        <div data-clipboard-text="#1d80d3"></div>
+        <div data-clipboard-text="#00a0e8"></div>
+        <div data-clipboard-text="#2db7f5"></div>
+        <div data-clipboard-text="#1f5aa3"></div>
+        <div data-clipboard-text="#0b366a"></div>
+        <div data-clipboard-text="#08172f"></div>
+      </div>
+
+      <div class="group-9">
+        <div data-clipboard-text="#f8c5ed"></div>
+        <div data-clipboard-text="#f5a6d3"></div>
+        <div data-clipboard-text="#f387c0"></div>
+        <div data-clipboard-text="#bc0f69"></div>
+        <div data-clipboard-text="#e9259e"></div>
+        <div data-clipboard-text="#f056ad"></div>
+        <div data-clipboard-text="#890b4c"></div>
+        <div data-clipboard-text="#5e0b36"></div>
+        <div data-clipboard-text="#230213"></div>
+      </div>
+
+      <div class="group-9">
+        <div data-clipboard-text="#f1ddbd"></div>
+        <div data-clipboard-text="#fbca72"></div>
+        <div data-clipboard-text="#fdac23"></div>
+        <div data-clipboard-text="#ce630f"></div>
+        <div data-clipboard-text="#ff6100"></div>
+        <div data-clipboard-text="#ff8a0c"></div>
+        <div data-clipboard-text="#8b4a04"></div>
+        <div data-clipboard-text="#523a13"></div>
+        <div data-clipboard-text="#341f0b"></div>
+      </div>
+
+      <div class="group-9">
+        <div data-clipboard-text="#e8dffa"></div>
+        <div data-clipboard-text="#b196ee"></div>
+        <div data-clipboard-text="#8867d2"></div>
+        <div data-clipboard-text="#581cb6"></div>
+        <div data-clipboard-text="#5e30b5"></div>
+        <div data-clipboard-text="#7a43e2"></div>
+        <div data-clipboard-text="#3f187d"></div>
+        <div data-clipboard-text="#2b1845"></div>
+        <div data-clipboard-text="#0f061b"></div>
+      </div>
+
+      <div class="group-9">
+        <div data-clipboard-text="#faf4b2"></div>
+        <div data-clipboard-text="#fdf161"></div>
+        <div data-clipboard-text="#fde023"></div>
+        <div data-clipboard-text="#d9b416"></div>
+        <div data-clipboard-text="#fac450"></div>
+        <div data-clipboard-text="#f7cd07"></div>
+        <div data-clipboard-text="#b48513"></div>
+        <div data-clipboard-text="#6b4c01"></div>
+        <div data-clipboard-text="#241a06"></div>
+      </div>
+
+      <div class="group-9">
+        <div data-clipboard-text="#e0f7fa"></div>
+        <div data-clipboard-text="#b2ebf2"></div>
+        <div data-clipboard-text="#80deea"></div>
+        <div data-clipboard-text="#00acc2"></div>
+        <div data-clipboard-text="#01bad2"></div>
+        <div data-clipboard-text="#26c6da"></div>
+        <div data-clipboard-text="#00708f"></div>
+        <div data-clipboard-text="#014b62"></div>
+        <div data-clipboard-text="#031213"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+  <script src="javascripts/clipboard.js"></script>
+  <script>
+    $(function() {
+
+      // $('.main-color').find('div').each(function() {
+      //   $(this).attr('data-clipboard-text', rgb2hex($(this).attr('style'))).removeAttr('style');
+      // });
+
+      // 颜色控制
+      (function() {
+        var colors = $('.group-9').find('div');
+
+        colors.each(function() {
+          // 初始化颜色
+          $(this).css('background-color', $(this).data('clipboard-text'));
+          $(this).mouseenter(function() {
+            // 鼠标移入
+            $(this).text($(this).data('clipboard-text')).css('background-color', '#fff');
+            selectText($(this)[0]);
+          }).mouseleave(function() {
+            // 鼠标移出
+            $(this).text('').css('background-color', $(this).data('clipboard-text'));
+          })
+        })
+      })();
+
+      var $tip = (function() {
+        var $ele = $('#tip');
+        var timeout = null;
+        var closeTime = 3000;
+
+        var close = function() {
+          $ele.slideUp();
+        }
+
+        var success = function() {
+          clearTimeout(timeout);
+
+          $ele.text('复制成功！').slideDown();
+
+          timeout = setTimeout(function() {
+            close();
+          }, closeTime);
+        }
+
+        var err = function() {
+          clearTimeout(timeout);
+
+          $ele.css('background-color', '#e01515').text('复制失败，请在色块上使用 Ctrl + C！').slideDown();
+
+          timeout = setTimeout(function() {
+            close();
+          }, closeTime);
+        }
+
+        return {
+          success: success,
+          err: err
+        }
+      })();
+
+
+      (function() {
+        // 复制到剪切板
+        var clipboard = new Clipboard('.group-9 div');
+
+        clipboard.on('success', function(e) {
+          $tip.success();
+
+          e.clearSelection();
+        });
+
+        clipboard.on('error', function(e) {
+          $tip.err();
+        });
+      })();
+
+
+      function selectText(element) {
+        var text = element,
+          range,
+          selection;
+
+        if (document.body.createTextRange) {
+          // IE
+          range = document.body.createTextRange();
+          range.moveToElementText(text);
+          range.select();
+        } else if (window.getSelection) {
+          // Others
+          selection = window.getSelection();
+          range = document.createRange();
+          range.selectNodeContents(text);
+          selection.removeAllRanges();
+          selection.addRange(range);
+        } else {
+          return false;
+        }
+      }
+
+      function rgb2hex(str) {
+        var rgb = str.match(/\d+/g);
+        for(var i = 0; i < rgb.length; i++) {
+          rgb[i] = parseInt(rgb[i]).toString(16);
+          rgb[i] = rgb[i].length < 2 ? '0' + rgb[i] : rgb[i];
+        }
+        return '#' + rgb.join('');
+      }
+
+      function hex2rgb(str) {
+        var r = parseInt(str.slice(1, 3), 16);
+        var g = parseInt(str.slice(3, 5), 16);
+        var b = parseInt(str.slice(5), 16);
+        return 'rgb(' + r + ',' + g + ',' + b + ')';
+      }
+    })
+  </script>
+</body>
+
+</html>
+
